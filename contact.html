@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Contact Us</title>
+
+<head>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- Custom Fonts from Google -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                  <span class="glyphicon glyphicon-fire"></span> 
+                  APPLI
+                </a>
+            </div>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="about-us">
+              <li><a href="candidate.html">Candidates</a></li>
+              <li><a href="employer.html">Employers</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </li>
+                    <li>
+                        <a href="creators.html">Meet The Creators</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                     
+                </ul>
+                
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+
+<style type="text/css">
+    body{
+  overflow-y: scroll;
+  background-color: #EBEBEB;  
+}
+h5{
+     margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  padding-bottom: 10px;
+  font-family: Rajdhani;
+  font-size: 15px;
+  color: #2E4B62;
+
+}
+
+.title{
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  padding-bottom: 10px;
+  font-family: Rajdhani;
+  font-size: 32px;
+  color: #2E4B62;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 5% auto 0 auto; 
+}
+.font {
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
+.form {
+  text-align: center; 
+  -webkit-animation: bounce 1.5s infinite;
+  -moz-animation: bounce 1.5s infinite;
+  animation: bounce 1.5s infinite;
+}
+.shadow{
+  box-shadow: 0px 0px 20px 5px #AAA;
+  opacity: 0.5;
+  border-radius: 100px;
+  width: 45%; 
+  margin: 40px auto 0 auto;
+  padding: 0 10px;  
+  -webkit-animation: shadow 1.5s infinite;
+}
+.field-in {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 50%;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.name {
+  background-color: #EE78D1;  
+  border-bottom: 5px solid #CB64B2;
+}
+.name:hover{
+  background-color: #DF1B76;
+  border-bottom: 5px solid #B2175F;
+}
+.name:focus, .email:focus, .message:focus{
+  outline: none;
+  padding:15px;
+}
+.email {
+  background-color: #7239C1;  
+  border-bottom: 5px solid #502789;
+}
+.email:hover{
+  background-color: #2014CB;
+  border-bottom: 5px solid #18108E;
+}
+.message {   
+  background-color: #0F9BE6;
+  border-bottom: 5px solid #1185C3;
+  overflow: hidden;
+  height: 50px;
+}
+.message:hover{
+  background-color: #2DD7BB;
+  border-bottom: 5px solid #2BB09A;
+  height: 150px;
+}
+.submit{
+  border-radius:5px;
+  padding:10px;
+  background-color: #EE78D1;  
+  border: none;
+  border-bottom: 5px solid #CB64B2;  
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.submit:hover{
+  -webkit-transform: translate(0, 4px);
+  border-bottom: 2px solid #CB64B2;  
+  box-shadow: inset 0px 0px 10px 10px #CF5DB2;
+  cursor: pointer;
+}
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { 
+   color: white;
+}
+
+::-moz-placeholder { 
+   color: white; 
+}
+
+:-ms-input-placeholder {  
+   color: white;  
+}
+
+@-webkit-keyframes bounce{
+  0%{
+    
+  }
+  100%{
+    -webkit-transform: translate(0, 8px);
+  }
+}
+@-moz-keyframes bounce{
+  0%{
+    
+  }
+  100%{
+    -moz-transform: translate(0, 8px);
+  }
+}
+@keyframes bounce{
+  0%{
+    
+  }
+  100%{
+    transform: translate(0, 8px);
+  }
+}
+@-webkit-keyframes shadow{
+  0%{
+    
+  }
+  100%{
+    opacity: 0.8;
+    width: 50%;
+  }
+}
+@-moz-keyframes shadow{
+  0%{
+    
+  }
+  100%{
+    opacity: 0.8;
+    width: 100%;
+  }
+}
+@keyframes shadow{
+  0%{
+    
+  }
+  100%{
+    opacity: 0.8;
+    width: 100%;
+  }
+}
+
+
+
+}
+
+</style>
+<html>
+  <head>
+      <link href='http://fonts.googleapis.com/css?family=Rajdhani|Pacifico' rel='stylesheet' type='text/css'/>
+  </head>
+<body>
+  <div class="wrapper">
+    <div class="title">
+      Contact Us
+    </div>
+    <div>
+        <h5>Tell us what you think about our little operation. </h5>
+    </div>
+    <form class="form">
+      <input type="text" class="name field-in font" placeholder="Your Name"/>
+      
+      <input type="text" class="email field-in font" placeholder="Email"/>
+      
+      <textarea class="message field-in font" placeholder="Message"></textarea> 
+      
+      <button class="submit font" href="#">Submit</button>
+    </form>     
+    <div class="shadow"></div>
+  </div>
+
+
+  
+    <div id="social">
+            <a class="facebookBtn smGlobalBtn" href="#" ></a>
+            <a class="twitterBtn smGlobalBtn" href="#" ></a>
+            <a class="googleplusBtn smGlobalBtn" href="#" ></a>
+            <a class="linkedinBtn smGlobalBtn" href="#" ></a>
+            <a class="pinterestBtn smGlobalBtn" href="#" ></a>
+            <a class="tumblrBtn smGlobalBtn" href="#" ></a>
+            <a class="rssBtn smGlobalBtn" href="#" ></a>
+        </div>
+
+        <!-- Footer -->
+    <footer class="page-footer">
+    
+      <!-- Contact Us -->
+        <div class="contact">
+          <div class="container">
+        <h2 class="section-heading">Contact Us</h2>
+        <p><span class="glyphicon glyphicon-earphone"></span><br> +1(555) 555 5555</p>
+        <p><span class="glyphicon glyphicon-envelope"></span><br> appli@example.com</p>
+          </div>
+        </div>
+          
+        <!-- Copyright etc -->
+        <!-- <div class="small-print">
+          <div class="container">
+            <p>Copyright &copy; Example.com 2015</p>
+          </div>
+        </div>
+         -->
+    </footer>
+    
+<style>
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+#social {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.smGlobalBtn { /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border:2px solid #ddd; /* add border to the buttons */
+    box-shadow: 0 3px 3px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 27px;
+    -moz-border-radius:27px;
+    -webkit-border-radius:27px;
+}
+
+/* facebook button class*/
+.facebookBtn{
+    background: #4060A5;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+    color: #4060A5;
+    background: #fff;
+    border-color: #4060A5; /* change the border color on mouse hover */
+}
+
+/* twitter button class*/
+.twitterBtn{
+    background: #00ABE3;
+}
+
+.twitterBtn:before{
+      font-family: "FontAwesome";
+      content: "\f099"; /* add twitter icon */
+      
+}
+
+.twitterBtn:hover{
+      color: #00ABE3;
+      background: #fff;
+      border-color: #00ABE3;
+}
+
+/* google plus button class*/
+.googleplusBtn{
+    background: #e64522;
+}
+
+.googleplusBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d5"; /* add googleplus icon */
+}
+
+.googleplusBtn:hover{
+      color: #e64522;
+      background: #fff;
+      border-color: #e64522;
+}
+
+/* linkedin button class*/
+.linkedinBtn{
+    background: #0094BC;
+}
+
+.linkedinBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0e1"; /* add linkedin icon */
+}
+
+.linkedinBtn:hover{
+      color: #0094BC;
+      background: #fff;
+      border-color: #0094BC;
+}
+
+/* pinterest button class*/
+.pinterestBtn{
+    background: #cb2027;
+}
+
+.pinterestBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d2"; /* add pinterest icon */
+}
+
+.pinterestBtn:hover{
+      color: #cb2027;
+      background: #fff;
+      border-color: #cb2027;
+}
+
+/* tumblr button class*/
+.tumblrBtn{
+    background: #3a5876;
+}
+
+.tumblrBtn:before{
+      font-family: "FontAwesome";
+      content: "\f173"; /* add tumblr icon */
+}
+
+.tumblrBtn:hover{
+      color: #3a5876;
+      background: #fff;
+      border-color: #3a5876;
+}
+
+/* rss button class*/
+.rssBtn{
+    background: #e88845;
+}
+
+.rssBtn:before{
+      font-family: "FontAwesome";
+      content: "\f09e"; /* add rss icon */
+}
+
+.rssBtn:hover{
+      color: #e88845;
+      background: #fff;
+      border-color: #e88845;
+}
+
+</style>
+
+
+
+  </footer>
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    
+    <!-- Custom Javascript -->
+    <script src="js/custom.js"></script>
+
+  
+</body>
+</html>
